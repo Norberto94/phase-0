@@ -23,14 +23,17 @@ What was your impression of this challenge overall? (love, hate, and why?)
 I liked this challenge because we found ourselves in a position where we could think from the top of our heads how to solve something but we still had to do some research and in the process learned some new things and solified some concepts.
 
 <img src="imgs/"Change colors.png""/>
+<img src="imgs/Column.png"/>
+<img src="imgs/Row.png"/>
 <img src="imgs/Equidistant.png"/>
 <img src="imgs/Squares.png"/>
-<img src="imgs/Row.png"/>
-<img src="imgs/Step7.png"/>
-<img src="imgs/Step9.png"/>
-<img src="imgs/Column.png"/>
 <img src="imgs/Step6.png"/>
+<img src="imgs/Step7.png"/>
 <img src="imgs/Step8.png"/>
+<img src="imgs/Step9.png"/>
+
+
+
 
 
 
