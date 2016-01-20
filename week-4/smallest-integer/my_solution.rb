@@ -13,15 +13,9 @@
 # Your Solution Below
 def smallest_integer(list_of_nums)
 	if list_of_nums == []
-		puts nil
-	elsif list_of_nums[0] < list_of_nums [1] && list_of_nums[0] < list_of_nums[2]
-		puts list_of_nums[0].to_s + " is the smallest"
-	elsif list_of_nums[1] < list_of_nums [2] && list_of_nums[1] < list_of_nums[0]
-		puts list_of_nums[1].to_s + " is the smallest"
-	else list_of_nums[2] < list_of_nums [1] && list_of_nums[2] < list_of_nums[0]
-		puts list_of_nums[2].to_s + " is the smallest"
+		return nil
+	else list_of_nums.sort_by!(&:to_i)
+		return list_of_nums[0]
 	end
 end
-
-smallest_integer([])
-smallest_integer([1, 2, 3])
+		
