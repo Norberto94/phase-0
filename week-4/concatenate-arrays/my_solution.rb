@@ -6,7 +6,10 @@
 # Your Solution Below
 
 def array_concat(array_1, array_2)
-  puts array_1.join(' , ') + array_2.join(' , ') 
+	if array_1 && array_2 == []
+		return []
+    elsif array_1 || array_2 != []
+     	return array_1.concat(array_2)
+     end
 end
 
-array_concat(["Hello", "World"], ["!"])
