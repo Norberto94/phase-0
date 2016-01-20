@@ -12,16 +12,9 @@
 
 # Your Solution Below
 def largest_integer(list_of_nums)
-  if list_of_nums == []
-		puts nil
-	elsif list_of_nums[0] > list_of_nums [1] && list_of_nums[0] > list_of_nums[2]
-		puts list_of_nums[0].to_s + " is the largest"
-	elsif list_of_nums[1] > list_of_nums [2] && list_of_nums[1] > list_of_nums[0]
-		puts list_of_nums[1].to_s + " is the largest"
-	else list_of_nums[2] > list_of_nums [1] && list_of_nums[2] > list_of_nums[0]
-		puts list_of_nums[2].to_s + " is the largest"
+	if list_of_nums == []
+		return nil
+	else list_of_nums.sort! {|a,b| b <=> a}
+		return list_of_nums[0]
 	end
 end
-
-largest_integer([])
-largest_integer([4, 2, 1])
