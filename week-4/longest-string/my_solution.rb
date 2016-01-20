@@ -13,20 +13,11 @@
 
 # Your Solution Below
 def longest_string(list_of_words)
-	if list_of_words == []
-		puts nil
-	elsif list_of_words == [" "]
-		puts " "
-	elsif list_of_words[0].length > list_of_words[1].length && list_of_words[0].length > list_of_words[2].length
-		puts list_of_words[0] + " is the longest string"
-	elsif list_of_words[1].length > list_of_words[2].length && list_of_words[1].length > list_of_words[0].length
-		puts list_of_words[1] + " is the longest string"
-	else list_of_words[2].length > list_of_words[1].length && list_of_words[2].length > list_of_words[0].length
-		puts list_of_words[2] + " is the longest string"
+	if list_of_words == [""]
+		return ""
+	else list_of_words.sort! { |a,b| b.length <=> a.length }
+		return list_of_words[0]
 	end
 end
 
-longest_string([])
-longest_string([" "])
-longest_string(["abc", "dell", "helloworld"])
   # Your code goes here!
