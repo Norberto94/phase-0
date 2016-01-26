@@ -26,9 +26,12 @@ end
 # you must call "do" and in between || any variable name which you'll be using to
 # refer to the element you want the code to do something to. It is convinient to call
 # it something meaningful.
-# include?:
-# select!:
-# push: 
+# include?: This method will check if the string it is being called on includes, the
+# argument passed to it. It does not work on numbers.
+# select!: This destructive method will keep in the array whathever elements meet the
+# criteria in the argument.
+# push: This method adds an element to an array.
+# to_s: Transforms whatever it is being called to into a string.
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
